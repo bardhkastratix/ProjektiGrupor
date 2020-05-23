@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="leftsideheader">
+            <button onclick="window.location.href = 'index.html';">Home</button>
+            <button id="headerbuttons">Cars</button>
+        </div>
+        <div class="middleheader">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="rightsideheader">
+            <button id="headerbuttons">Contact</button>
+            <button id="headerbuttons">Log in</button>
+        </div>
+    </div>
+
+    <div class="cont">
+        <div class="container">
+            <div class="link-container">
+              <button id="firstA" href="#" onclick="changeForm(0)">Login</button>
+              <button href="#" onclick="changeForm(1)">Register</button>
+            </div>
+            <form id="mainForm" action="">
+              <div class="login forms form-style">
+                <label for="">EMAIL</label>
+                <input type="email" class="input">
+                <label for="">PASSWORD</label>
+                <input type="password" class="input">
+                <input
+                  id="submit"
+                  type="submit"
+                  class="input submit"
+                  value="Login"
+                  onclick="validate(0)"
+                />
+              </div>
+              <div class="register forms hidden">
+                <label for="">EMAIL</label>
+                <input type="email" class="input" >
+                <label for="">NAME</label>
+                <input type="text" class="input">
+                <label for="">PASSWORD</label>
+                <input type="text" class="input">
+                <input
+                  id="submit"
+                  type="submit"
+                  class="input submit"
+                  value="Login"
+                  onclick="validate(1)"
+                />
+              </div>
+              <div class="social-media">
+                  <ul>
+                      <li><img src="facebook.png" alt=""></li>
+                      <li><img src="google.png" alt=""></li>
+                      <li><img src="instagram.png" alt=""></li>
+                  </ul>
+              </div>
+            </form>
+          </div>
+    </div>
+
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
